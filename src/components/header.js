@@ -1,18 +1,16 @@
-import React, {Component} from 'react';
-import HeaderBar from './headerBar';
+import React from "react";
 
-class Header extends Component {
-    render() {
-        return [
-            <div className='header'>
-                <h1 className="header__title">Welcome to HOA Manager!</h1>
-                <p className="header__subtitle">Please login to continue</p>
-                
-            </div>,
-            HeaderBar(),
-            this.props.children
-        ]
-    }
+export function Header() {
+    return (
+        <div className="header">
+          <h1 className="header__title">Welcome to HOA Manager!</h1>
+          <p className="header__subtitle">Please login to continue</p>
+        </div>
+    )
 }
 
-export default Header;
+export function HeaderBar() {
+    return (
+         <div className='bar'></div>
+    )
+ }
