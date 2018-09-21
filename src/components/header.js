@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
+import HeaderBar from './headerBar';
 
 class Header extends Component {
     render() {
-        return (
+        return [
             <div className='header'>
                 <h1 className="header__title">Welcome to HOA Manager!</h1>
                 <p className="header__subtitle">Please login to continue</p>
-                {this.props.children}
-            </div>
-        )
+                
+            </div>,
+            HeaderBar(),
+            this.props.children
+        ]
     }
 }
 
