@@ -1,1 +1,12 @@
-@import 'variables', 'base', 'header', 'signin', 'signup';
+
+// BASE
+@import 'variables', 'base';
+
+// HEADER
+@import 'header';
+
+// AUTH
+@import 'signin', 'signup';
+
+// HELPERS
+@import 'form-title';
