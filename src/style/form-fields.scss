@@ -1,7 +1,10 @@
+
+// INPUT
+
 .form-input {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 129px 500px;
+    grid-template-columns: 12.9rem 50rem;
 
     align-items: center;
     width: 629px;
@@ -34,5 +37,24 @@
         padding-left: 2rem;
         font-size: 1.6rem;
         font-weight: 500;
+    }
+}
+
+// BUTTON
+
+.form-button {
+    
+    &__button {
+        height: 4rem;
+        width: 21.6rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: $color-red-ba;
+
+        color: white;
+        font-size: 2.2rem;
+        font-weight: 500;
+        line-height: 2.8rem;
+        text-align: center;
     }
 }
