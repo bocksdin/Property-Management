@@ -6,7 +6,7 @@
         grid-row: tab-s/tab-e;
 
         display: grid;
-        grid-template-rows: 1fr;
+        grid-template-rows: [s] 1fr [e];
         grid-template-columns: repeat(auto-fill, 1fr);
         grid-auto-flow: column;
         justify-items: center;
@@ -19,12 +19,18 @@
     }
 
     &__tab {
+        grid-row: s/e;
+        height: 100%;
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 2rem;
         text-align: center;
-        width: 9rem;       
-        // padding-bottom: 2rem;
-        // border-bottom: 1px solid $color-red-ba; 
+        width: 9rem;
+        border-bottom: 0.2rem solid transparent;
+    }
+
+    &__active {
+        color: $color-red-ba;
+        border-bottom: 0.2rem solid $color-red-ba;
     }
 }
