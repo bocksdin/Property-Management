@@ -2,11 +2,13 @@
     display: grid;
     grid-template-rows: [tabs-s] 5rem [tabs-e content-s] 1fr [content-e];
 
+    height: 100%;
+
     &__tabs {
-        grid-row: tab-s/tab-e;
+        grid-row: tabs-s/tabs-e;
 
         display: grid;
-        grid-template-rows: [s] 1fr [e];
+        grid-template-rows: [s] 1fr [m] 1fr 1fr [e];
         grid-template-columns: repeat(auto-fill, 1fr);
         grid-auto-flow: column;
         justify-items: center;
@@ -19,7 +21,7 @@
     }
 
     &__tab {
-        grid-row: s/e;
+        grid-row: m/e;
         height: 100%;
         font-size: 1.6rem;
         font-weight: 500;
