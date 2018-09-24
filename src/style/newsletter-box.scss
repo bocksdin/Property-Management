@@ -1,0 +1,22 @@
+.newsletter-box {
+    height: 16rem;
+    width: 16rem;
+    border: 0.1rem solid $color-red-ba;
+    border-radius: 0.5rem;
+
+    color: $color-red-ba;
+
+    display: grid;
+    justify-items: center;
+
+    &__day {
+        font-size: 7rem;
+        line-height: 8.1rem;
+        align-self: center;
+    }
+
+    &__month-year {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}
