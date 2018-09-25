@@ -25,7 +25,7 @@ class NewsletterGrid extends Component {
                 <Button className="newsletter-grid__button" callback={() => this.handleAddNewsletter()} icon="fas fa-plus"/>
                 <NewsletterBox date={new Date()}/>
                 <NewsletterArchive/>
-                <NewsletterLatest {...latest}/>
+                <NewsletterLatest history={this.props.history} {...latest}/>
             </div>
         )
     }
