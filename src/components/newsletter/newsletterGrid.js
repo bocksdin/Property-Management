@@ -16,7 +16,7 @@ class NewsletterGrid extends Component {
     componentDidMount() {
         setTimeout(() => {
             this.props.fetchNewsletters();
-        }, 1000);        
+        }, 500);        
     }
 
     render() {
