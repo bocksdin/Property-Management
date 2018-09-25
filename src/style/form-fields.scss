@@ -59,6 +59,21 @@
 
 // BUTTON
 
+.form-button,
+.form-button-small {
+    &__button {
+        transition: all .2s ease;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {            
+            transform: scale(0.95) translateY(0.205rem);
+        }
+    }
+}
+
 .form-button {
     
     &__button {
