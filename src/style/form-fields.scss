@@ -90,7 +90,7 @@
     }
 
     &__danger {
-        border: none;
+        border: 0.1rem solid $color-red-ba;
         color: white;
         background-color: $color-red-ba;
     }
