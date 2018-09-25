@@ -1,21 +1,21 @@
-
 // BASE
-@import 'variables', 'base';
+@import "variables", "base", "mixins";
 
 // HEADER
-@import 'header';
+@import "header";
 
 // AUTH
-@import 'signin', 'signup';
+@import "signin", "signup";
 
 // HELPERS
-@import 'form-title', "form-fields", "text-link";
+@import "form-title", "form-fields", "text-link";
 
 // DASHBOARD
 @import "dashboard", "tab-nav";
 
 // NEWSLETTERS
-@import "newsletter-grid", "newsletter-box", "newsletter-archive", "newsletter-latest", "newsletter-new", "newsletter-new-form";
+@import "newsletter-grid", "newsletter-box", "newsletter-archive",
+  "newsletter-latest", "newsletter-new", "newsletter-new-form";
 
 // BUTTON
 @import "button";
