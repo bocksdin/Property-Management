@@ -5,15 +5,17 @@
 
 .sign-in-form {
     display: grid;
+    grid-template-columns: [s] 1fr [input-s] 62.9rem [input-e] 1fr [e];
     justify-items: center;
 
     &__title {
         width: 100%;
         margin-top: 6.6rem;
+        grid-column: s/e;
     }
 
     &__email {
-        margin-top: 7.7rem;
+        margin-top: 7.7rem;        
     }
 
     &__password {
@@ -31,5 +33,12 @@
     &__email,
     &__password {
         transform: translateX(-6.45rem);
+    }
+
+    &__email,
+    &__password,
+    &__login,
+    &__text-links {
+        grid-column: input-s/input-e;
     }
 }

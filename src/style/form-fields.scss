@@ -4,10 +4,11 @@
 .form-input {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 12.9rem 50rem;
+    grid-template-columns: 3fr 10fr;
+    // grid-template-columns: 12.9rem 50rem;
 
     align-items: center;
-    width: 629px;
+    width: 100%;
     justify-content: center;
 
     &__title {
@@ -31,7 +32,7 @@
 
     &__input {
         height: 4rem;
-        width: 50rem;
+        // width: 50rem;
         border: 1px solid $color-gray-e6;
         border-radius: .5rem;
         padding-left: 2rem;
