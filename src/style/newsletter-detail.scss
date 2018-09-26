@@ -16,4 +16,14 @@
         width: 100%;
         margin-top: 6.6rem;
     }
+
+    &__cancel {
+        grid-row: 1;
+        grid-column: latest-s/latest-e;
+        justify-self: end;
+        align-self: end;
+
+        margin-right: 1rem;
+        margin-bottom: 1.2rem;
+    }
 }
