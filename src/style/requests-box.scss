@@ -1,12 +1,37 @@
+
 .requests-box {
     @include box;
-    
-    background-color: $color-red-ba;
-    color: white;
+}
 
-    &__point {
-        background-color: $color-red-ba;
+.requests-box-active {
+    background-color: $color-red-ba;
+    border-color: $color-red-ba;    
+
+    .requests-box {
+        &__title,
+        &__count {
+            color: white;
+        }
+
+        &__point {
+            background-color: $color-red-ba;
+            border-color: $color-red-ba;
+        }
     }
 }
 
+.requests-box-inactive {
+    background-color: white;
+    border-color: $color-gray-e6;
 
+    .requests-box {
+        &__title,
+        &__count {
+            color: $color-gray-4d;
+        }
+
+        &__point {
+            display: none;
+        }
+    }
+}
