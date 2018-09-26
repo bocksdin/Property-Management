@@ -1,6 +1,7 @@
 .new-newsletter-form {
     display: grid;
     grid-template-columns: [s input-s] 102rem [input-e] 1fr [e];
+    margin: 0 10%;
 
     &__title {
         width: 100%;

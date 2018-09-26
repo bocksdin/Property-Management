@@ -1,4 +1,19 @@
 .newsletter-detail {
     grid-row: content-s/content-e;
     grid-column: content-s/content-e;
+
+    justify-content: center;
+
+    display: grid;
+    grid-template-rows: [title-s] 10rem [title-e add-s] 4.7rem [add-e s box-s] 16rem [box-e] 1fr [e];
+    grid-template-columns: [box-s] 16rem [box-e latest-s] 96rem [latest-e];
+
+    grid-column-gap: 6.1rem;
+
+    &__title {
+        grid-row: title-s/title-e;
+        grid-column: 1/-1;
+        width: 100%;
+        margin-top: 6.6rem;
+    }
 }
