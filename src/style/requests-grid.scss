@@ -1,0 +1,19 @@
+.requests-grid {
+    grid-row: content-s/content-e;
+    justify-content: center;
+
+    display: grid;
+    grid-template-rows: [add-s] 4.7rem [add-e s box-s] 16rem [box-e archive-s] 1fr [archive-e e];
+    grid-template-columns: [box-s archive-s] 16rem [box-e archive-e latest-s] 96rem [latest-e];
+
+    grid-column-gap: 6.1rem;
+
+    &__button {
+        grid-row: add-s/add-e;
+        grid-column: latest-s/latest-e;
+        margin-right: 1rem;
+        justify-self: end;
+        align-self: center;
+        z-index: 5;
+    }
+}
