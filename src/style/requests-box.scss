@@ -1,0 +1,12 @@
+.requests-box {
+    @include box;
+    
+    background-color: $color-red-ba;
+    color: white;
+
+    &__point {
+        background-color: $color-red-ba;
+    }
+}
+
+

@@ -4,3 +4,40 @@
     font-weight: 500;
     line-height: 2.3rem;
 }
+
+@mixin box {
+    height: 16rem;
+    width: 16rem;
+    border: 0.15rem solid $color-red-ba;
+    border-radius: 0.5rem;    
+
+    display: grid;
+    justify-items: center;
+    position: relative;
+
+    &__day,
+    &__count {
+        font-size: 7rem;
+        line-height: 8.1rem;
+        align-self: center;
+    }
+
+    &__month-year,
+    &__title {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    &__point {
+        height: 4rem;
+        width: 4rem;
+        position: absolute;
+        top: 6rem;
+        right: 0;
+        transform: translateX(52%) rotate(45deg);
+        
+        border-right: 0.15rem solid $color-red-ba;
+        border-top: 0.15rem solid $color-red-ba;
+        border-top-right-radius: 0.5rem;
+    }
+}

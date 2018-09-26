@@ -1,40 +1,11 @@
 .newsletter-box {
+    @include box;
 
     grid-row: box-s/box-e;
     grid-column: box-s/box-e;
-
-    height: 16rem;
-    width: 16rem;
-    border: 0.15rem solid $color-red-ba;
-    border-radius: 0.5rem;
-
     color: $color-red-ba;
 
-    display: grid;
-    justify-items: center;
-    position: relative;
-
-    &__day {
-        font-size: 7rem;
-        line-height: 8.1rem;
-        align-self: center;
-    }
-
-    &__month-year {
-        font-size: 2rem;
-        line-height: 2.3rem;
-    }
-
     &__point {
-        height: 4rem;
-        width: 4rem;
-        position: absolute;
-        top: 6rem;
-        right: 0;
-        transform: translateX(52%) rotate(45deg);
         background-color: white;
-        border-right: 0.15rem solid $color-red-ba;
-        border-top: 0.15rem solid $color-red-ba;
-        border-top-right-radius: 0.5rem;
     }
 }
