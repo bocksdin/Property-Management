@@ -1,5 +1,7 @@
 .requests {
-    background-color: chocolate;
     grid-column: requests-s/requests-e;
     grid-row: s/e;
+
+    display: grid;
+    grid-row-gap: 2rem;
 }
