@@ -1,8 +1,10 @@
 import React from 'react';
 
-function Icon({icon}) {
+function Icon({className, icon}) {
     return (
-        <i className={icon}/>
+        <div className={className}>
+            <i className={icon}/>
+        </div>
     )
 }
 
