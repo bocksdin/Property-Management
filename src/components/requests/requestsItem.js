@@ -45,12 +45,12 @@ class RequestsItem extends Component {
 
         <div className="requests-item__description">
           <AnimateHeight duration={300} height={this.state.height}>
-            <div className="requests-item__description">
+            <div className="item-description">
               <img
                 src="http://via.placeholder.com/160x94"
-                className="requests-item__description__img"
+                className="item-description__img"
               />
-              <p className="requests-item__description__text">
+              <p className="item-description__text">
                 Donec cursus dictum neque vitae aliquam. Donec ultrices justo
                 non lacinia placerat. Phasellus posuere sed odio vel mollis.
                 Nulla vitae massa sit amet elit vehicula aliquam sit amet non
