@@ -1,10 +1,10 @@
 import React from 'react';
 
-function Icon({className, icon}) {
+function Icon({className, icon, callback}) {
     return (
-        <div className={className}>
+        <a onClick={callback} className={className}>
             <i className={icon}/>
-        </div>
+        </a>
     )
 }
 
