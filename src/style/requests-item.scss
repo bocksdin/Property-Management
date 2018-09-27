@@ -16,16 +16,16 @@
     &__title {
         grid-column: title-s/title-e;
         grid-row: title-s/title-e;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
     }
 
     &__tenant-unit {
         grid-column: title-s/title-e;
         grid-row: tenant-s/tenant-e;
-    }
-
-    &__arrow {
-        grid-column: arrow-s/arrow-e;
-        grid-row: title-s/title-e;
+        align-self: start;
     }
 
     &__date {
@@ -58,9 +58,16 @@
     }
 
     &__title {
-        font-size: 1.8rem;
-        font-weight: 500;
-        line-height: 2.3rem;
+        &__text {
+            font-size: 1.8rem;
+            font-weight: 500;
+            line-height: 2.3rem;
+            margin-right: 2.5rem;
+        }
+
+        &__arrow {
+            font-size: 3rem;
+        }
     }
 
     &__tenant-unit {
@@ -68,10 +75,6 @@
         font-family: $font-encode-cond;
         font-size: 1.3rem;
         line-height: 1.6rem;
-    }
-
-    &__arrow {
-        font-size: 3rem;
     }
 
     &__date {
@@ -84,7 +87,6 @@
     }
 
     &__description {
-        
         
         &__text {
             font-size: 1.4rem;
