@@ -1,6 +1,7 @@
 .requests {
     grid-column: requests-s/requests-e;
     grid-row: s/e;
+    align-self: start;
 
     display: grid;
     grid-row-gap: 2rem;

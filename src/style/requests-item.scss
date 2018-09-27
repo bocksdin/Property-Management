@@ -1,8 +1,7 @@
-
 // GRID
 .requests-item {
     display: grid;
-    grid-template-rows: [s title-s] 3.4rem [title-e tenant-s] 3.4rem [tenant-e e description-s] 14.7rem [description-e];
+    grid-template-rows: [s title-s] 3.4rem [title-e tenant-s] 1.5rem [tenant-e e];
     grid-template-columns: [icon-s] 10rem [icon-e s title-s] minmax(4rem, 1fr) [title-e arrow-s] 6.8rem [arrow-e date-s] 10rem [date-e e] 6rem;
 
     align-items: center;
@@ -42,7 +41,7 @@
 
     &__description {
         grid-column: s/e;
-        grid-row: description-s/description-e;
+        // grid-row: description-s/description-e;
 
         display: grid;
         grid-column-gap: 4rem;
@@ -52,6 +51,11 @@
 
 // STYLES
 .requests-item {
+    padding: 6px 0;
+
+    &:hover {
+        background-color: $color-gray-e6;
+    }
 
     &__icon {
         font-size: 2.7rem;
@@ -87,6 +91,8 @@
     }
 
     &__description {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         
         &__text {
             font-size: 1.4rem;
