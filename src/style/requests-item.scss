@@ -1,3 +1,5 @@
+
+// GRID
 .requests-item {
     display: grid;
     grid-template-rows: [s title-s] 3.4rem [title-e tenant-s] 3.4rem [tenant-e e description-s] 14.7rem [description-e];
@@ -45,9 +47,48 @@
         display: grid;
         grid-column-gap: 4rem;
         grid-auto-flow: column;
+    }
+}
+
+// STYLES
+.requests-item {
+
+    &__icon {
+        font-size: 3rem;
+    }
+
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 2.3rem;
+    }
+
+    &__tenant-unit {
+        color: $color-red-ba;
+        font-family: $font-encode-cond;
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+
+    &__arrow {
+        font-size: 3rem;
+    }
+
+    &__date {
+        font-size: 1.4rem;
+        line-height: 1.7rem;
+    }
+
+    &__move {
+        
+    }
+
+    &__description {
+        
         
         &__text {
-
+            font-size: 1.4rem;
+            line-height: 1.7rem;
         }
 
         &__img {
