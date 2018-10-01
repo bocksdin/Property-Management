@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import AnimateHeight from "react-animate-height";
+import { connect } from 'react-redux';
+import * as actions from '../../actions';
 
 import Icon from "../icon";
 import Button from "../button";
@@ -52,7 +54,7 @@ class RequestsItem extends Component {
         </div>
         <Button
           className="requests-item__move"
-          callback={() => console.log("clicked")}
+          callback={() => this.props.changeStatus({_id, status})}
           icon="fas fa-wrench"
         />
 
@@ -74,4 +76,4 @@ class RequestsItem extends Component {
   }
 }
 
-export default RequestsItem;
+export default connect(null, actions)(RequestsItem);
