@@ -27,8 +27,15 @@ class RequestsItem extends Component {
       }
   }
 
+  handleStatus = () => {
+    const { _id, status } = this.props;
+    this.props.changeStatus({_id, status}, () => {
+      this.props.fetchRequests();
+    })
+  }
+
   render() {
-    const { _id, title, body, date, imageUrl, status } = this.props;
+    const { _id, title, body, date, imageUrl } = this.props;
     const parsedDate = new Date(date);
     return (
       <div id="requests-item" className="requests-item">
@@ -54,7 +61,7 @@ class RequestsItem extends Component {
         </div>
         <Button
           className="requests-item__move"
-          callback={() => this.props.changeStatus({_id, status})}
+          callback={() => this.handleStatus()}
           icon="fas fa-wrench"
         />
 
