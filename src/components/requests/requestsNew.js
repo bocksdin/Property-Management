@@ -6,11 +6,6 @@ import NewNewsletterForm from "../newsletter/newsletterNewForm";
 
 class NewRequest extends Component {
   onSubmit = fields => {
-    // console.log(button);
-    // if(button == "submit") {
-    //     //save new newsletter on the backend
-    //     console.log('trying to submit to backend')
-    // }
     const { title, body, image } = fields;
 
     var formData = new FormData();
