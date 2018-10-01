@@ -17,12 +17,46 @@
 
     background-color: white;
     color: $color-red-ba;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $color-red-ba;
+        background-color: white;
+        .requests-box__point {
+            background-color: white;
+        }
+
+        .requests-box__icon {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .requests-box__count {
+            opacity: 0;
+            transform: translateX(5rem);
+        }
+
+        .requests-box__title {
+            color: $color-red-ba;
+        }
+    }
 
     &__day,
-    &__count {
+    &__count,
+    &__icon {
+        transition: all .2s ease;
         font-size: 7rem;
         line-height: 8.1rem;
         align-self: center;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        transform: translateX(0);
+    }
+
+    &__icon {
+        opacity: 0;
+        font-size: 5rem;
+        transform: translateX(-5rem);
     }
 
     &__month-year,
