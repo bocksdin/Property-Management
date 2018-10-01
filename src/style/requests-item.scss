@@ -36,7 +36,7 @@
     &__move {
         grid-column: date-s/date-e;
         grid-row: s/e;
-        display: none;
+        justify-self: right;
     }
 
     &__description {
@@ -50,12 +50,26 @@
     }
 }
 
+.bg-e6 {
+    background-color: $color-gray-e6;
+}
+
 // STYLES
 .requests-item {
     padding: 6px 0;
+    transition: all .3s ease;
 
     &:hover {
         background-color: $color-gray-e6;
+
+        .requests-item__move {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        .requests-item__date {
+            transform: translateX(-10rem);
+        }
     }
 
     &__icon {
@@ -83,12 +97,15 @@
     }
 
     &__date {
+        transition: all .3s ease;
         font-size: 1.4rem;
         line-height: 1.7rem;
     }
 
     &__move {
-        
+        transition: all .3s ease;
+        transform: translateX(10rem);
+        opacity: 0;
     }
 
     .item-description {

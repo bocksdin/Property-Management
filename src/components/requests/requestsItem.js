@@ -13,16 +13,19 @@ class RequestsItem extends Component {
   }
 
   toggleDropdown = () => {
+    var element = document.getElementById('requests-item');
       if(this.state.height == 0) {
-          this.setState({height: 'auto'})
+          element.classList.add('bg-e6');
+          this.setState({height: 'auto'});
       } else {
-          this.setState({height: 0})
+          element.classList.remove('bg-e6');
+          this.setState({height: 0});
       }
   }
 
   render() {
     return (
-      <div className="requests-item">
+      <div id="requests-item" className="requests-item">
         <Icon
           className="requests-item__icon"
           icon="fas fa-exclamation-triangle"
