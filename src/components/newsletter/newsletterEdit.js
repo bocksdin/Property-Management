@@ -5,13 +5,19 @@ import * as actions from '../../actions';
 import EditNewsletterForm from "./newsletterEditForm";
 
 class EditNewsletter extends Component {
-  onSubmit = (fields, button) => {
-    // console.log(button);
-    // if(button == "submit") {
-    //     //save new newsletter on the backend
-    //     console.log('trying to submit to backend')
-    // }
-    this.props.history.push("/dashboard");
+  onSubmit = fields => {
+    const { title, body, image } = fields;
+
+    var formData = new FormData();
+    formData.append('title', title);
+    formData.append('body', body);
+    if (image != undefined) {
+      formData.append('image', image);
+    }
+
+    this.props.editNewNewsletter(formData, () => {
+        this.props.history.push("/dashboard");
+    })
   };
 
   onCancel = () => {
