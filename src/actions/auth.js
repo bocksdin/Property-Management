@@ -5,6 +5,13 @@ import { ROOT_URL } from "../config";
 import { AUTHENTICATE_USER } from "./types";
 
 export function signUp(fields, success) {
+  // var newFields = {
+  //   admin: true
+  // }
+  // newFields = {
+  //   ...fields,
+  //   ...newFields
+  // }
   return function(dispatch) {
     axios
       .post(`${ROOT_URL}/signUp`, fields)
