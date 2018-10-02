@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { connect } from 'react-redux';
+
 import { Header, HeaderBar } from "./header";
 
 class Layout extends Component {
@@ -13,4 +15,8 @@ class Layout extends Component {
   }
 }
 
-export default Layout;
+function mapStateToProps(state) {
+  return state;
+}
+
+export default connect(mapStateToProps)(Layout);
