@@ -8,6 +8,8 @@ import Button from "../button";
 
 import { ROOT_URL } from '../../config';
 
+import RequireAdmin from '../auth/requireAdmin';
+
 class RequestsItem extends Component {
   constructor() {
     super();
@@ -69,12 +71,13 @@ class RequestsItem extends Component {
           /
           {parsedDate.getFullYear() - 2000}
         </div>
-        <Button
-          className="requests-item__move"
-          callback={() => this.handleStatus()}
-          icon={moveButtonIcon}
-        />
-
+        <RequireAdmin>
+          <Button
+            className="requests-item__move"
+            callback={() => this.handleStatus()}
+            icon={moveButtonIcon}
+          />
+        </RequireAdmin>
         <div className="requests-item__description">
           <AnimateHeight duration={300} height={this.state.height}>
             <div className="item-description">
