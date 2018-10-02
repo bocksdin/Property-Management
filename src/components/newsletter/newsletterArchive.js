@@ -4,15 +4,16 @@ import { connect } from 'react-redux';
 import history from '../../history';
 
 export function ArchiveItem({title, date, _id, callback}) {
+    const parsedDate = new Date(date);
     return (
         <div className="archive-item archive-items__item">
             <a onClick={() => callback(_id)} className="archive-item__title">{title}</a>
             <div className="archive-item__date">
-                { (date.getMonth() + 1) }
+                { (parsedDate.getMonth() + 1) }
                 /
-                { date.getDate() }
+                { parsedDate.getDate() }
                 /
-                { (date.getFullYear() - 2000) }
+                { (parsedDate.getFullYear() - 2000) }
             </div>
         </div>
     )
