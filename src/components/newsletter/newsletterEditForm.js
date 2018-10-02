@@ -74,7 +74,8 @@ function mapStateToProps(state) {
 }
 
 EditNewsletterForm = reduxForm({
-  form: "editNewsletter"
+  form: "editNewsletter",
+  enableReinitialize: true
 })(EditNewsletterForm);
 
 EditNewsletterForm = connect(mapStateToProps)(EditNewsletterForm);
