@@ -15,7 +15,7 @@ class EditNewsletter extends Component {
       formData.append('image', image);
     }
 
-    this.props.editNewNewsletter(formData, () => {
+    this.props.editNewNewsletter(this.props.match.params.id, formData, () => {
         this.props.history.push("/dashboard");
     })
   };
