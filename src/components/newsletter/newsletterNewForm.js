@@ -11,7 +11,9 @@ class NewNewsletterForm extends Component {
     const { 
       fieldOnePlaceholder, fieldOneTitle,
       fieldTwoPlaceholder, fieldTwoTitle,
-    } = this.props;      
+    } = this.props;   
+    
+    
 
     return (
       <form onSubmit={handleSubmit} className="new-newsletter-form">
