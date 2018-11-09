@@ -63,7 +63,7 @@ class RequestsItem extends Component {
             icon="fas fa-sort-down"
           />
         </div>
-        <div className="requests-item__tenant-unit">{`${_id} - Unit ${this.props.unit}`}</div>
+        <div className="requests-item__tenant-unit">{`${this.props.fullname} - Unit ${this.props.unit}`}</div>
         <div className="requests-item__date">
           {parsedDate.getMonth() + 1}
           /
@@ -97,8 +97,10 @@ class RequestsItem extends Component {
 }
 
 function mapStateToProps(state) {
+  const { fullname, unit } = state.auth.user;
   return {
-    unit: state.auth.user.unit
+    fullname,
+    unit
   }
 }
 

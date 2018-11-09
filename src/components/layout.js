@@ -9,7 +9,7 @@ class Layout extends Component {
     return (
       <div className="layout-grid">
         <Header title={title} subtitle={subtitle}/>
-        {this.props.hideBar ? '' : <HeaderBar/>}
+        {hideBar ? '' : <HeaderBar/>}
         {this.props.children}
       </div>
     );
